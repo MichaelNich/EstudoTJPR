@@ -1,0 +1,125 @@
+body {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: rgb(167, 157, 219);
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+  align-items: center;
+  padding-left: 9px;
+  padding-top: 18px;
+  background-color: rgb(188, 179, 230);
+}
+
+.box2 {
+  position: absolute;
+  padding-bottom: 73px;
+  border: 2px solid red;
+  height: 200px;
+  padding-bottom: 150px;
+}
+
+.box3 {
+  width: 485px;
+  height: 400px;
+  position: absolute;
+  bottom: 110px;
+  background-color: white;
+}
+
+.aux-container {
+  padding-left: 64px;
+}
+
+.pergunta-container {
+  width: 480px;
+  height: 200px;
+  border: none;
+  position: relative;
+  background-color: lightyellow;
+  font-family: 'Lucida Sans Unicode';
+  font-size: 17px;
+  color: black;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  border: 1px solid;
+}
+
+.responder-button {
+  width: 100px;
+  height: 30px;
+  background-color: lightblue;
+  font-family: 'Lucida Sans Unicode';
+  font-size: 15px;
+  border: 1px solid;
+  color: black;
+}
+
+.textarea-container {
+  position: relative;
+  /* you should change this*/
+  width: 98.2%;
+  padding-top: 5px;
+}
+
+textarea,
+.textarea-size {
+  min-height: 25px;
+  /* need to manually set font and font size */
+  font-family: "Verdana";
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 4px;
+  border: none;
+  overflow: hidden;
+  width: 100%;
+  border: 1px solid;
+}
+
+.container-input{
+  width: 486px;
+  height:200px;
+}
+
+textarea {
+  height: 70%;
+  position: absolute;
+  resize: none;
+
+  /*
+"pre" or "preline" or "normal" fixes Chrome issue where
+  whitespace at end of lines does not trigger a line break.
+However, it causes the text to exhibit the behavior seen with
+  "pre" that is described below.
+ */
+  white-space: normal;
+}
+
+.textarea-size {
+  height: 200px;
+  visibility: hidden;
+
+  /*
+Pre-wrap: preserve spacing and newlines, but wrap text.
+Pre: preserve spacing and newlines but don't wrap text.
+
+"pre" does not wrap well on Firefox, even with word-wrap:break-word.
+"pre" on Chrome works with word-wrap, but exhibits different behavior:
+Instead of entire words being moved to the next line for wrapping,
+the browser will cut words in the middle for wrapping.
+"pre-line" has Firefox issues
+*/
+  white-space: pre-wrap;
+  /* Required for wrapping lines in Webkit,
+  but not necessary in Firefox if you have white-space wrapping
+  (pre-wrap, normal, pre-line) already set */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}

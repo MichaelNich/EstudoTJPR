@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Hello World</title>
+	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">-->
+	<script src="jquery-3.3.1.min.js">
+	</script>
+	<script src="popup.js">
+	</script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div class="box">
+		<div class="pergunta-container" id="Pergunta">
+		</div>
+		<div class="textarea-container">
+			<textarea placeholder="Digite sua resposta aqui!" id= "resposta2" maxlength="300"></textarea>
+			<div class="textarea-size" id="Resposta"></div>
+		</div>
+		<div class="aux-container">
+			<a id="addCheck"><input type="checkbox" id="auxCheck"></a>
+			<button type="submit" id="Adicionar-button" class="responder-button" style="background-color:pink; visibility: hidden;">Adicionar</button>
+			<button type="submit" id="Responder" class="responder-button">
+				Responder
+			</button>
+			<button type="submit" id="Progresso" class="responder-button" style="background-color: lightgreen;">Progresso
+			</button>
+		</div>
+	</div>
+	<div class="box3" id="box3" style="visibility: hidden">
+		<textarea name="adicionar-pergunta" form="usrform" class="container-input" placeholder="Coloque sua pergunta aqui!!" id="adicionar-pergunta"></textarea>
+		<textarea name="adicionar-resposta" form="usrform" class="container-input" placeholder="Coloque sua resposta aqui!!" id="adicionar-resposta" style="top: 210px;"></textarea>
+	</div>
+</body>
+
+</html>
